@@ -1,0 +1,37 @@
+/*
+ * Name: William Chen
+ * Date: November 23 2015
+ * Teacher: Mrs. Andrighetti
+ * Procedure Type Questions Part B Question 3
+ */
+import java.util.Scanner;
+class ProcedurePartBQ3{
+  public static void main (String args[]){
+    Scanner myScanner = new Scanner (System.in);
+    int lengthA;
+    int lengthB;
+    int lengthC;
+    System.out.println("Enter the lenght of a stick:");
+    lengthA = myScanner.nextInt();
+    System.out.println("Enter the lenght of a stick:");
+    lengthB = myScanner.nextInt();
+    System.out.println("Enter the lenght of a stick:");
+    lengthC = myScanner.nextInt();
+    triangleMethod(lengthA, lengthB, lengthC);
+  }
+  public static void triangleMethod (int a, int b, int c){
+    int [] stickLength = new int []{a, b, c};
+    int max = 0;
+    int num;
+    for (int i=0; i<stickLength.length; i++){
+      for (int x=0; x<stickLength.length; x++){
+        if (stickLength[x]>stickLength[i+1]){
+          swap = stickLength[x];
+          stickLength[x] = stickLength[x+1];
+          stickLength[x+1] = swap;
+        }
+      }
+    }
+  }
+}
+  

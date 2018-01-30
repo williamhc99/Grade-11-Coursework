@@ -1,0 +1,35 @@
+/*
+ * Name: William Chen
+ * Date: November 2 2015
+ * Teacher: Mrs. Andrighetti
+ * Sorting Exercise 2
+ */ 
+import java.util.Scanner;
+class Sort2{
+  public static void main (String args[]){
+    Scanner myScanner = new Scanner (System.in);
+    int list[]=new int [5];
+    int swap;
+    for (int i=0; i<list.length; i++){
+       System.out.println("Enter a number");
+       list[i]=myScanner.nextInt();
+    }
+    System.out.println("Numbers in order they were entered:");
+    for (int i=0; i<list.length; i++){
+      System.out.println(list[i]);
+    }
+    for (int a=0; a<list.length; a++){
+      for (int i=0; i<(list.length-1); i++){
+        if (list[i]>list[i+1]){
+          swap = list[i];
+          list[i] = list[i+1];
+          list[i+1] = swap;
+        }
+      }
+    }
+    System.out.println("Numbers in descending order: ");
+    for (int i=0; i<list.length; i++){
+      System.out.println(list[i]);
+    }
+  }
+}

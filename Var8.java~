@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+/*
+ * Name:William Chen
+ * Date:Sept 18 2015
+ * Variable Exercies 8
+ */
+
+class Var8 {
+  public static void main(String args[]) {
+    Scanner myScanner = new Scanner(System.in);
+    int money;
+    int interest;
+    int years;
+    int earned;
+    int total;
+    System.out.println("How much money are you investing?");
+    money = myScanner.nextInt();
+    System.out.println("What is the interest rate in %?");
+    interest = myScanner.nextInt();
+    System.out.println("In years, how long is your investment going to last");
+    years = myScanner.nextInt();
+    System.out.println("You will earn "(money*(interest/100)^years));
+      
+    
+      }
+  }

@@ -1,0 +1,11 @@
+import java.util.Scanner;
+class test3{
+  public static void main (String args[]){
+    Scanner myScanner = new Scaneer (System.in);
+    int i=0;
+    do {
+      System.out.println("Enter a number");
+      i = myScanner.nextInt();
+    }while (i<10);
+  }
+}

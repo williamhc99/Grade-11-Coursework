@@ -1,0 +1,139 @@
+/*
+ * Name: William Chen
+ * Date: November 20 2015
+ * Teacher: Mrs. Andrighetti
+ * String Activity November 20
+ */
+import java.util.Scanner;
+class StringActivity{
+  static Scanner myScanner = new Scanner (System.in);
+  static String repeatProgram="yes";
+  static String userChoice;
+  public static void main (String args[]){
+    int userInput;
+    while (repeatProgram.equals("yes")){
+      System.out.println("Enter the number of method you want to use (1-17)");
+      userInput = myScanner.nextInt();
+      myScanner.nextLine();
+      if (userInput==1){
+        firstnameLastname();
+      }else if (userInput==2){
+        wordLength();
+      }else if (userInput==3){
+        letterPosition();
+      }else if (userInput==4){
+        lastCharacter();
+      }else if (userInput==5){
+        wordCombiner();
+      }else if (userInput==6){
+        lastThree();
+      }else if (userInput==7){
+        lastThreeModified();
+      }else if (userInput==8){
+        catFinder();
+      }
+      System.out.println("Do you want to use another method? (yes/no)");
+      userChoice = myScanner.nextLine();
+      if (userChoice.equals("no")){
+        System.out.println(userChoice);
+        break;
+      }
+    }System.out.println("Thank you for using the program");
+  }
+  public static void firstnameLastname(){
+    String firstName;
+    String lastName;
+    String finalOutput;
+    System.out.println("Enter your first name: ");
+    firstName = myScanner.nextLine();
+    System.out.println("Enter your last name: ");
+    lastName = myScanner.nextLine();
+    finalOutput = (lastName+", "+firstName);
+    System.out.println(finalOutput);
+  }
+  public static void wordLength(){
+    String word;
+    int wordLength;
+    System.out.println("Enter a word: ");
+    word = myScanner.nextLine();
+    wordLength = word.length();
+    System.out.println(word+" has "+wordLength+" letters.");
+  }
+  public static void letterPosition(){
+    String word;
+    String letterInput;
+    char letter;
+    int position=0;
+    System.out.println("Enter a word");
+    word = myScanner.nextLine();
+    System.out.println("Enter a letter");
+    letterInput = myScanner.nextLine();
+    letter = letterInput.charAt(0);
+    for (int i=0; i<word.length(); i++){
+      if (letter == word.charAt(i)){
+        position += (i+1);
+      }
+    }
+    System.out.println("The letter "+letter+" is in position "+position);
+  }
+  public static void lastCharacter(){
+    String word;
+    char lastLetter;
+    System.out.println("Enter a word");
+    word = myScanner.nextLine();
+    lastLetter = word.charAt(word.length()-1);
+    System.out.println("The last character of "+word+" is "+lastLetter);
+  }
+  public static void wordCombiner(){
+    String word1;
+    String word2;
+    String finalWord;
+    System.out.println("Enter a word");
+    word1=myScanner.nextLine();
+    System.out.println("Enter another word");
+    word2=myScanner.nextLine();
+    finalWord = word1.concat(word2);
+    System.out.println("The two words combined will be: "+finalWord);
+  }
+  public static void lastThree(){
+    String word;
+    char character;
+    System.out.println("Enter a word");
+    word = myScanner.nextLine();
+    System.out.println("The word is "+word.length()+" characters long");
+    for (int i=(word.length()-1); i>0; i--){
+      character = word.charAt(i);
+      System.out.println("The letter in the "+i+" position of the word is "+character);
+    }
+  }
+  public static void lastThreeModified(){
+    String word;
+    char character;
+    do{
+      System.out.println("Enter a word");
+      word = myScanner.nextLine();
+      if (word.length()<3){
+        System.out.println("Please enter another word that is longer than three letters.");
+      }
+    }while (word.length()<3);
+    System.out.println("The word is "+word.length()+" characters long");
+    for (int i=(word.length()-1); i>0; i--){
+      character = word.charAt(i);
+      System.out.println("The letter in the "+i+" position of the word is "+character);
+      }
+  }
+  public static void catFinder(){
+    String word;
+    String cat = "cat";
+    int result;
+    System.out.println("Enter a word");
+    word = myScanner.nextLine();
+    result = word.indexOf(cat);
+    if (result>=0){
+      System.out.println("The word you entered contains the word cat.");
+      System.out.println("It is in the "+result+" position of the word you entered.");
+    }   
+  }
+}
+  
+    

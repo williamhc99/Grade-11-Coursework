@@ -1,0 +1,51 @@
+/*
+ * Name: William Chen
+ * Date: November 9 2015
+ * Teacher: Mrs. Andrighetti
+ * Formative Programming Task
+ */
+import java.util.Scanner;
+class FormativeProgrammingTask{
+  public static void main (String args[]){
+    Scanner myScanner = new Scanner (System.in);
+    final int MAX = 100;
+    String [] xx = new String [MAX];
+    int [] mm = new int [MAX];
+    String userInput;
+    int highestMark=0;
+    int swap;
+    
+    System.out.println("Enter all names and marks of the students. Once there are no more students, enter finish to show furthur options.");
+    for (int i=0; i<MAX; i++){
+      System.out.println("Enter the name of the student: ");
+      xx[i]=myScanner.nextLine();
+      if (xx[i].equals("finish")){
+        break;
+      }
+      System.out.println("Enter their mark: ");
+      mm[i]=myScanner.nextInt();
+      myScanner.nextLine();
+    }
+    System.out.println("Enter A to display all name and marks");
+    System.out.println("Enter B to display highest mark");
+    System.out.println("Enter C to display average mark");
+    System.out.println("Enter D to display names in alphabetical order");
+    System.out.println("Enter E to display marks in ascending order");
+    System.out.println("Enter F to exit");
+    userInput=myScanner.nextLine();
+    if (userInput.equals("A")){
+      for (int i=0; i<xx.length; i++){
+        System.out.println("Name: "+xx[i]+" Mark: "+mm[i]);
+      }
+    }else if (userInput.equals("B")){
+      for (int i=0; i<(xx.length); i++){
+        if (mm[i]>highestMark){
+          highestMark=mm[i];
+        }
+      }
+      
+      System.out.println("The highest mark is: "+highestMark);
+    }
+  }
+}
+

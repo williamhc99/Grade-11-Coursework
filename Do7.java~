@@ -1,0 +1,16 @@
+/*
+ * Do Loop 7.java
+ * Date: Sept 26 2015
+ * Author: William Chen
+ */
+import java.util.Scanner;
+class Do7 {
+  public static void main(String args[]) {     
+    Scanner myScanner = new Scanner(System.in);
+    int num = 1;
+    do {
+      System.out.println(num+" William Chen");
+      num++;
+    }while((num>0)&&(num<11));
+  }
+}

@@ -1,0 +1,18 @@
+/* 
+ * Name: William Chen
+ * Date: September 28 2015
+ * For Loop Extra Exercise 1
+ */
+import java.util.Scanner;
+class Loop1{
+  public static void main (String args[]){
+    int num;
+    int sum = 0;
+    System.out.println("Enter a number: ");
+    num = System.nextInt();
+    for (i=0;i<=num;i++){
+      sum+=num;
+    }
+    System.out.println(sum);
+  }
+}

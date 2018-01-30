@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+/*
+ * Assignemnt 3 Question 8.java
+ * Date: Sept 17 2015
+ * Author: William Chen
+ */
+
+class Assignment_3_Question_8 {
+  public static void main(String args[]) {
+    Scanner myScanner = new Scanner(System.in);
+      int number1;
+        System.out.println("Enter a number between 0-100");
+        number1=myScanner.nextInt();
+  }{
+    Scanner myScanner = new Scanner(System.in);
+      int number2;
+        System.out.println("Enter another number between 0-100");
+        number2=myScanner.nextInt();
+  }if (number1>number2){
+    System.out.println(number1);
+  }if else (number2>number1){
+    System.out.println(number2);
+  }
+}
+      
+        

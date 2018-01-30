@@ -1,0 +1,10 @@
+/*
+ * Name: William Chen
+ * Date: October 26 2015
+ * Teacher: Mrs. Andrighetti
+ * Array Processing Exercise 1
+ */
+import java.util.Scanner;
+class ArrayProcessing1{
+  public static void main (String args[]){
+    Scanner myScanner = new Scanner 

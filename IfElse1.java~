@@ -1,0 +1,15 @@
+/* Name: William Chen
+ * Date: September 27 2015
+ * If Else Extra Exercises
+ */
+import java.util.Scanner;
+class IfElse1{
+  public static void main(String args[]){
+    int temp;
+    System.out.println("What is the temperature outside?");
+    temp = myScanner.nextInt();
+    if (temp<-20){
+      System.out.println("It is very cold outside.");
+    }
+  }
+}

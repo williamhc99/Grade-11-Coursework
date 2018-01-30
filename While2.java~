@@ -1,0 +1,15 @@
+/*
+ * While Loop 2.java
+ * Date: Sept 17 2015
+ * Author: William Chen
+ */
+
+class While2 {
+  public static void main(String args[]) {     
+    int num = 0;
+    while ((num>=0)&&(num<100)){
+      num++;
+      System.out.println(num);
+    }
+  }
+}

@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+/*
+ * Assignemnt 3 Question 5.java
+ * Date: Sept 17 2015
+ * Author: William Chen
+ */
+
+class Assignment_3_Question_5 {
+  public static void main(String args[]) {
+    Scanner myScanner = new Scanner(System.in);
+      
+      int number;
+      
+      System.out.println("Enter a secret number: ");
+      number = myScanner.nextInt();
+      System.out.println("Guess the secret number:");
+      if (number==myScanner.nextInt()){
+        System.out.println("You got it!");
+      }else 
+        System.out.println("Guess again.");
+  }
+}

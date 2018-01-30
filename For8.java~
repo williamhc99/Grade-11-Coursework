@@ -1,0 +1,35 @@
+import java.util.Scanner;
+/*
+ * For Loop 8.java
+ * Date: Sept 17 2015
+ * Author: William Chen
+ */
+
+class For8 {
+  public static void main(String args[]) { 
+    Scanner myScanner = new Scanner(System.in);
+    int a;
+    int b;
+    int c;
+    int d;
+    int e;
+    
+    System.out.println("Enter the first number: ");
+    a = myScanner.nextInt();
+    
+    System.out.println("Enter the second number: ");
+    b = myScanner.nextInt();
+    
+    System.out.println("Enter the third number: ");
+    c = myScanner.nextInt();
+    
+    System.out.println("Enter the fourth number: ");
+    d = myScanner.nextInt();
+    
+    System.out.println("Enter the fifth number: ");
+    e = myScanner.nextInt();
+    for (int i = a*b*c*d*e){
+      System.out.println(i);
+    }
+  }
+}

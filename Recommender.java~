@@ -1,0 +1,186 @@
+/* 
+ * Name: William Chen
+ * Date: October 2 2015
+ * Teacher: Mrs. Andrighetti
+ * Recommender Program
+ */
+import java.util.Scanner;
+class Recommender {
+  public static void main (String args[]){
+    Scanner myScanner = new Scanner (System.in);
+    int i = 0;
+    String name;
+    String ui;
+    String ui1;
+    String ui2;
+    String ui3;
+    System.out.println("Please enter your name: ");
+    name = myScanner.nextLine();
+    System.out.println(name+", welcome to the music recommender program. This programm will give you a music recommendation by asking you a series of questions.");
+    System.out.println("To exit program, enter exit.");
+    while (i>=0){
+      System.out.println("Do you prefer Classical or Popular music?");
+      System.out.println("Enter 'a' for Classical music and 'b' for Popular music.");
+      ui = myScanner.nextLine();
+      if (ui.equals("a")){
+        System.out.println("How do you like to listen to your music?");
+        System.out.println("Enter 'a' for listening live");
+        System.out.println("Enter 'b' for listening to a recording");
+        ui3 = myScanner.nextLine();
+        if (ui3.equals("a")){
+          System.out.println("What era of classical music do you prefer?");
+          System.out.println("Enter 'a' for baroque era");
+          System.out.println("Enter 'b' for classical era");
+          System.out.println("Enter 'c' for romantic era");
+          ui1 = myScanner.nextLine();
+          System.out.println("What kind of instrumentation do you prefer?");
+          System.out.println("Enter 'a' for orchestra");
+          System.out.println("Enter 'b' for symphony");
+          ui2 = myScanner.nextLine();
+          if ((ui1.equals("a"))&&(ui2.equals("a"))){
+            System.out.println("baroque orchestra");//FILL IN RECOMMENDATION
+            break;
+          }else if ((ui1.equals("b"))&&(ui2.equals("a"))){
+            System.out.println("classical orchestra");//FILL IN RECOMMENDATION
+            break;
+          }else if ((ui1.equals("c"))&&(ui2.equals("a"))){
+            System.out.println("romantic orchestra");// FILL IN RECOMMENDATION
+            break;
+          }else if ((ui1.equals("a"))&&(ui2.equals("b"))){
+            System.out.println("baroque symphony");//FILL IN RECOMMENDATION
+            break;
+          }else if ((ui1.equals("b"))&&(ui2.equals("b"))){
+            System.out.println("classical symphony");//FILL IN RECOMMENDATION
+            break;
+          }else if ((ui1.equals("c"))&&(ui2.equals("b"))){
+            System.out.println("romantic symphony");//FILL IN RECOMMENDATION
+            break;
+          }else if (ui1.equals("exit")||(ui2.equals("eixt"))) {
+            System.out.println("Exiting program");
+            break;
+          }
+        }else if (ui3.equals("b")){
+          System.out.println("What era of classical music do you prefer?");
+          System.out.println("Enter 'a' for baroque era");
+          System.out.println("Enter 'b' for classical era");
+          System.out.println("Enter 'c' for romantic era");
+          ui1 = myScanner.nextLine();
+          System.out.println("What kind of instrumentation do you prefer?");
+          System.out.println("Enter 'a' for orchestra");
+          System.out.println("Enter 'b' for symphony");
+          ui2 = myScanner.nextLine();
+          if ((ui1.equals("a"))&&(ui2.equals("a"))){
+            System.out.println("baroque orchestra");//FILL IN RECOMMENDATION
+            break;
+          }else if ((ui1.equals("b"))&&(ui2.equals("a"))){
+            System.out.println("classical orchestra");//FILL IN RECOMMENDATION
+            break;
+          }else if (ui1.equals("c")&&(ui2.equals("a"))){
+            System.out.println("romantic orchestra");// FILL IN RECOMMENDATION
+            break;
+          }else if ((ui1.equals("a"))&&(ui2.equals("b"))){
+            System.out.println("baroque symphony");//FILL IN RECOMMENDATION
+            break;
+          }else if ((ui1.equals("b"))&&(ui2.equals("b"))){
+            System.out.println("classical symphony");//FILL IN RECOMMENDATION
+            break;
+          }else if ((ui1.equals("c"))&&(ui2.equals("b"))){
+            System.out.println("romantic symphony");//FILL IN RECOMMENDATION
+            break;
+          }else if (ui1.equals("exit")||(ui2.equals("eixt"))){
+            System.out.println("Exiting program");
+            break;
+          }
+        }else if (ui.equals("exit")){
+          System.out.println("Exiting program");
+          i-=10;
+          break;
+        }
+      }else if (ui.equals("b")){
+        System.out.println("How do you like to listen to your music?");
+        System.out.println("Enter 'a' for listening live");
+        System.out.println("Enter 'b' for listening to a recording");
+        ui3 = myScanner.nextLine();
+        if (ui3.equals("a")){
+          System.out.println("What genre of popular music do you prefer?");
+          System.out.println("Enter 'a' for pop");
+          System.out.println("Enter 'b' for rap");
+          System.out.println("Enter 'c' for country");
+          System.out.println("Enter 'd' for electronic");
+          ui1 = myScanner.nextLine();
+          System.out.println("What time period of popular music do you prefer?");
+          System.out.println("Enter 'a' for early 2000s");
+          System.out.println("Enter 'b' for modern");
+          ui2 = myScanner.nextLine();
+          if (ui1.equals("a")&&ui2.equals("a")){
+            System.out.println("pop, early 2000s");//FILL IN RECOMMENDATION
+            break;
+          }else if (ui1.equals("b")&&ui2.equals("a")){
+            System.out.println("rap, early 2000s");//FILL IN RECOMMENDATION
+            break;
+          }else if (ui1.equals("c")&&ui2.equals("a")){
+            System.out.println("country, early 2000s");//FILL IN RECOMMENDATION
+            break;
+          }else if (ui1.equals("d")&&ui2.equals("a")){
+            System.out.println("electronic, early 2000s");//FILL IN RECOMMENDATION
+            break;
+          }else if (ui1.equals("a")&&ui2.equals("b")){
+            System.out.println("pop, modern");//FILL IN RECOMMENDATION
+            break;
+          }else if (ui1.equals("b")&&ui2.equals("b")){
+            System.out.println("rap, modern");//FILL IN RECOMMENDATION
+            break;
+          }else if (ui1.equals("c")&&ui2.equals("b")){
+            System.out.println("country, modern");//FILL IN RECOMMENDATION
+            break;
+          }else if (ui1.equals("d")&&ui2.equals("b")){
+            System.out.println("electronic, modern");//FILL IN RECOMMENDATION
+            break;
+          }else if (ui1.equals("exit")||ui2.equals("exit")){
+            System.out.println("Exiting program");
+            break;
+          }
+        }else if (ui3.equals("b")){
+          System.out.println("What genre of popular music do you prefer?");
+          System.out.println("Enter 'a' for pop");
+          System.out.println("Enter 'b' for rap");
+          System.out.println("Enter 'c' for country");
+          System.out.println("Enter 'd' for electronic");
+          ui1 = myScanner.nextLine();
+          System.out.println("What time period of popular music do you prefer?");
+          System.out.println("Enter 'a' for early 2000s");
+          System.out.println("Enter 'b' for modern");
+          ui2 = myScanner.nextLine();
+          if (ui1.equals("a")&&ui2.equals("a")){
+            System.out.println("pop, early 2000s");//FILL IN RECOMMENDATION
+            break;
+          }else if (ui1.equals("b")&&ui2.equals("a")){
+            System.out.println("rap, early 2000s");//FILL IN RECOMMENDATION
+            break;
+          }else if (ui1.equals("c")&&ui2.equals("a")){
+            System.out.println("country, early 2000s");//FILL IN RECOMMENDATION
+            break;
+          }else if (ui1.equals("d")&&ui2.equals("a")){
+            System.out.println("electronic, early 2000s");//FILL IN RECOMMENDATION
+            break;
+          }else if (ui1.equals("a")&&ui2.equals("b")){
+            System.out.println("pop, modern");//FILL IN RECOMMENDATION
+            break;
+          }else if (ui1.equals("b")&&ui2.equals("b")){
+            System.out.println("rap, modern");//FILL IN RECOMMENDATION
+            break;
+          }else if (ui1.equals("c")&&ui2.equals("b")){
+            System.out.println("country, modern");//FILL IN RECOMMENDATION
+            break;
+          }else if (ui1.equals("d")&&ui2.equals("b")){
+            System.out.println("electronic, modern");//FILL IN RECOMMENDATION
+            break;
+          }else if (ui1.equals("exit")||ui2.equals("exit")){
+            System.out.println("Exiting program");
+            break;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+/*
+ * Name: William Chen
+ * Date: November 25 2015
+ * Teacher: Mrs. Andrighetti
+ * Output to File Exercise 14
+ */
+import java.util.Scanner;
+import java.io.*;
+class OutFile14{
+  static File myFile = new java.io.File("file14.txt");
+  static PrintWriter output = new PrintWriter (myFile);
+  public static void main (String args[]){
+    Scanner myScanner = new Scanner (System.in);
+    int triangleHeight;
+    System.out.println("Enter the height of the triangle: ");
+    triangleHeight = myScanner.nextInt();
+    triangleDrawer(triangleHeight);
+  }
+  public static void triangleDrawer (int h){
+    for (int i=0; i<h; i++){
+      for (int a=0; a<i+1; a++){
+        output.print("*");
+      }
+      output.println();
+    }
+  }
+  static output.close();
+}

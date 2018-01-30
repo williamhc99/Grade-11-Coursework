@@ -1,0 +1,18 @@
+/*
+ * Name: William
+ * Date: September 28 2015
+ * Conditional Loops Exercise 4
+ */
+import java.util.Scanner;
+class Cond4{
+  public static void main (String args[]){
+    Scanner myScanner = new Scanner(System.in);
+    int i = 0;
+    int num;
+    while (i>=1&&i<=100){
+      System.out.println("Enter a positive number that is a multiple of three.");
+      num = myScanner.nextInt();
+      i++;
+    }
+  }
+}

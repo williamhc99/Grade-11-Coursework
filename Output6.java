@@ -1,0 +1,19 @@
+/*
+ * Name:William Chen
+ * Date:Sept 18 2015
+ * Output Exercises 6
+ */
+class Output6{
+ public static void main(String args[]) {
+   System.out.println("Hello World");
+   System.out.println("Hello World");
+   System.out.println("Hello World");
+   System.out.println("Hello World");
+   System.out.println("Hello World");
+   System.out.println("Hello World");
+   System.out.println("Hello World");
+   System.out.println("Hello World");
+   System.out.println("Hello World");
+   System.out.println("Hello World");
+ }
+}

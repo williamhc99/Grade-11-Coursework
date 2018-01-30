@@ -1,0 +1,34 @@
+/*
+ * Name: William Chen
+ * Date: October 28 2015
+ * Teacher: Mrs. Andrighetti
+ * Array Processing Exercise 3
+ */
+import java.util.Scanner;
+class ArrayProcessing3{
+  public static void main (String args[]){
+    Scanner myScanner = new Scanner(System.in);
+    int [] phoneNumberArray = new int [10];
+    int [] areaCodeNumArray = new int [10];
+    String [] nameArray = new String [10];
+    int areaCode=9050000000;
+    for (int i=0; i<nameArray.length; i++){
+      System.out.println("Enter your name:");
+      nameArray[i]=myScanner.nextLine();
+      System.out.println("Enter your phone number, including area code: ");
+      phoneNumberArray[i]=myScanner.nextInt();
+      myScanner.nextInt();
+      if (phoneNumberArray/Areacode==1){
+        int a=0;
+        areaCodeNumArray[a]=phoneNumberArray[i];
+        i++;
+    }
+    for (int a=0; a<areaCodeNumArray.length; a++){
+      System.out.pritnln(areaCodeNumArray[a]);
+    }
+    }
+  }
+        
+    
+    
+      

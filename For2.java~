@@ -1,0 +1,13 @@
+/*
+ * For Loop 2.java
+ * Date: Sept 17 2015
+ * Author: William Chen
+ */
+
+class For2 {
+  public static void main(String args[]) {     
+    for (int i = 1; i <100; i++){
+      System.out.println(i);
+    }
+  }
+}

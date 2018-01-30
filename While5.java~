@@ -1,0 +1,23 @@
+import java.util.Scanner;
+/*
+ * While Loop 5.java
+ * Date: Sept 24 2015
+ * Author: William Chen
+ */
+
+class While5 {
+  public static void main(String args[]) {  
+    scanner myScanner = newScanner(System.in);
+    String word;
+    int num;
+    int counter = 0;
+    System.out.println("Enter a word: ");
+    word = myScanner.nextLine();
+    System.out.println("Enter how many times you want to print this word: ");
+    num = myScanner.nextInt();
+    while ((counter>0)&&(counter<=num)){
+      System.out.println(word);
+      counter++;
+    }
+  }
+}

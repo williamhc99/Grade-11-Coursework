@@ -1,0 +1,34 @@
+/*
+ * Name: William Chen
+ * Date: November 25 2015
+ * Teacher: Mrs. Andrighetti
+ * Output to File Exercise 9
+ */
+import java.util.Scanner;
+import java.io.*;
+class OutFile9{
+  public static void main (String args[])throws Exception{
+    Scanner myScanner = new Scanner (System.in);
+    File myFile = new java.io.File("file9.txt");
+    PrintWriter output = new PrintWriter(myFile);
+    int counter =0;
+    int mark;
+    int highest=0;
+    while (counter<=20){
+      System.out.println("Enter a mark:");
+      mark = myScanner.nextInt();
+      if ((mark>=0)&&(mark<=100)){
+        counter++;
+        if (highest<mark){
+          highest = mark;
+        }
+      }
+      else{
+        System.out.println("Invalid mark.");
+        counter++;
+      }
+    }
+    output.println(highest);
+    output.close();
+  }
+}

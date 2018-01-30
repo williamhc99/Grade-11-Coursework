@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+/*
+ * Name:William Chen
+ * Date:Sept 18 2015
+ * Variable Exercies 9
+ */
+
+class Var9 {
+  public static void main(String args[]) {
+    Scanner myScanner = new Scanner(System.in);
+      
+      String firstname;
+      String lastname;
+      
+      System.out.println("Enter your first name: ");
+      name = myScanner.nextLine();
+      System.out.println("Enter your last name: ");
+      age = myScanner.nextLine();
+      
+      System.out.println("You are " + firstname + +lastname); 
+
+      }
+  }

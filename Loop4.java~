@@ -1,0 +1,18 @@
+/*
+ * Name: William Chen
+ * Date: September 28 2015
+ * For Loop Exercise 4
+ */
+import java.util.Scanner;
+class Loop4{
+  public class void main (String args[]){
+    Scanner myScanner = new Scanner(System.in);
+    int num;
+    char symbol;
+    System.out.println("Enter a symbol/character: ");
+    symbol = myScanner.nextLine();
+    System.out.println("Enter how many times to print the symbol/character: ");
+    num = myScanner.nextInt();
+    System.out.println(num+symbol);
+  }
+}

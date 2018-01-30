@@ -1,0 +1,12 @@
+/* 
+ * Name: William Chen
+ * Date: November 2 2015
+ * Teacher: Mrs. Andrighetti
+ * Sorting Exercise 5
+ */
+import java.util.Scanner;
+class Sort5{
+  public static void main (String args[]){
+    Scanner myScanner = new Scanner (System.in);
+    String names[] = new String []
+    

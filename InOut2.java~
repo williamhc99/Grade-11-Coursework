@@ -1,0 +1,24 @@
+/* 
+ * Name: William Chen
+ * Date; Spetember 27 2015
+ * Input Output Extra Exercises 1
+ */
+import java.util.Scanner
+class InOut2{
+  public static void main (String args[]){
+    Scanner myScanner = new Scanner(System.in);
+    double d1;
+    double d2;
+    double d3;
+    String name;
+    System.out.println("What is the runner's name?");
+    name = myScanner.nextInt();
+    System.out.pritnln("What is the distance of the first leg of the race?");
+    d1 = myScanner.nextInt();
+    System.out.println("What is the distance of the second leg of the race?");
+    d2 = myScanner.nextInt();
+    System.out.println("What is the distance of the third leg of the race?");
+    d3 = myScanner.nextInt();
+    System.out.println("The total distance of the race is "+(d1+=d2+=d3)+"km");
+  }
+}

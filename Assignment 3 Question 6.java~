@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+/*
+ * Assignemnt 3 Question 3.java
+ * Date: Sept 17 2015
+ * Author: William Chen
+ */
+
+class Assignment_3_Question_3 {
+  public static void main(String args[]) {
+    Scanner myScanner = new Scanner(System.in);
+      
+      int mark;
+      
+      System.out.println("Enter your mark: ");
+      mark = myScanner.nextInt();
+        
+        System.out.println("You entered: "+ mark);
+      if (mark>=0&&mark<=49) {
+        System.out.println("Fail.");
+      }else if (mark>=50&&mark<=74){ 
+        System.out.println("Pass.");
+      }else if (mark>=75&&mark<=100){
+        System.out.println("Great.");
+      }else if {
+        System.out.println("Invalid Mark");
+      }
+  }
+}
